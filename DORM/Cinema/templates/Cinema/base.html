@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% load static %}
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="{% static 'Cinema/images/favicon.ico' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'Cinema/css/bootstrap.min.css' %}">
+    <title>{{ title }}</title>
+</head>
+<body class="d-flex flex-column min-vh-100 bg-dark">
+
+{% include 'Includes/navbar.html' %}
+    
+{% block content %}
+{% endblock content %}
+
+<script src="{% static 'Cinema/js/bootstrap.bundle.min.js' %}"></script>
+
+</body>
+</html>
